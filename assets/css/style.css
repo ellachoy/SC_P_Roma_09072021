@@ -4,8 +4,176 @@
   font-family: "santio-bold";
   src: url("../fonts/SANTIO/TTF/Santio\ Bold.ttf");
 }
+/* general effect */
+body {
+  margin: 0;
+}
+article {
+  padding: 0 10%;
+}
 
-farbe: #e7bc0e / #efefef / #6bc1a3 / #cb91b6 / #7eb8e1 / #000 / #fff;
-font-family: "Roboto", sans-serif;
-font-family: "Tangerine", cursive;
-font-family: ;
+/* background img.with parallax */
+.parallax {
+  background: url(../img/cleo-topper.jpg) center/cover no-repeat;
+  position: relative;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+/* header area */
+.parallax > figure {
+  position: relative;
+  font-size: 0.8em;
+  margin-top: 0;
+  padding-top: 0.5em;
+}
+.parallax > figure > img {
+  position: absolute;
+  right: 12%;
+  width: 2em;
+}
+.parallax > figure > a {
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  text-decoration: underline #e7bc0e;
+  text-underline-position: under;
+  right: 5%;
+  top: 1em;
+  font-family: "Roboto", sans-serif;
+}
+/* title */
+.title {
+  width: 20%;
+  margin-bottom: 35vh;
+}
+.title > h3 {
+  font-family: "santio-bold";
+  font-size: 3.5em;
+  color: white;
+  margin: 15vh auto 0;
+}
+.title > h6 {
+  font-family: "Tangerine", cursive;
+  font-size: 2.5em;
+  letter-spacing: -2px;
+  color: #e7bc0e;
+  margin-top: 1em;
+}
+.title > h6::after {
+  content: " ⌄";
+}
+/* story  */
+.story {
+  width: 50%;
+  color: #6bc1a3;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+  line-height: 1.3em;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.5em;
+  margin-bottom: 35vh;
+}
+.story > p {
+  padding: 0.5em;
+  text-align: start;
+}
+.story p > span,
+.statistic figure > h5 > span,
+.lives p > span {
+  color: white;
+  background: #000;
+}
+/* statistic */
+.statistic figure {
+  font-family: "santio-bold";
+  margin-bottom: 23vh;
+}
+.statistic figure > img {
+  width: 12vh;
+}
+.statistic figure > h2 {
+  font-size: 9vh;
+  margin-bottom: 0;
+}
+.statistic figure > h5 {
+  font-size: 3vh;
+  margin-top: 0;
+}
+.statistic figure:nth-child(1) {
+  color: #e7bc0e;
+}
+.statistic figure:nth-child(2) {
+  color: #cb91b6;
+}
+.statistic figure:nth-child(3) {
+  color: #6bc1a3;
+}
+.statistic figure:nth-of-type(even) h2 {
+  margin-top: 0;
+}
+.statistic figure:nth-of-type(even) h5 {
+  margin: 7vh auto 2vh;
+}
+.lives {
+  font-family: "santio-bold";
+  color: #7eb8e1;
+  font-size: 1.5em;
+  padding: 0 7% 0 45%;
+  line-height: 1.6;
+  text-align: right;
+  text-align: start;
+}
+/* img kids */
+.kids {
+  position: relative;
+}
+.kids .bg {
+  background: url(../img/see.png) center/cover no-repeat;
+  width: 100%;
+  min-height: 100vh;
+}
+.kids .other {
+  position: absolute;
+  background: url(../img/kid.png) center / cover no-repeat;
+  width: 100%;
+  min-height: 100vh;
+  top: 3em;
+}
+.donate {
+  background-color: #000;
+  padding: 20% 20%;
+  color: #efefef;
+  font-family: "Santio-bold";
+  margin: 0 auto;
+}
+.donate > h3 {
+  width: 80%;
+  font-size: 6vh;
+  padding-bottom: 10%;
+  margin-bottom: 0;
+  text-align: start;
+}
+.donate > a {
+  font-family: "Roboto";
+  font-size: 2vh;
+  color: #efefef;
+  padding: 2.5% 5%;
+  border: 1px solid #efefef;
+  text-decoration: none;
+}
+.donate a:hover {
+  box-shadow: 10px 10px #fff;
+}
+
+footer {
+  background: black;
+  color: #efefef;
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+footer a {
+  color: #6bc1a3;
+  text-decoration: none;
+}
